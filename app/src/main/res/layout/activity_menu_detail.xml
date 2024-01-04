@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="411dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/main_2" />
+
+    <TextView
+        android:id="@+id/nameMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="211dp"
+        android:text="@string/name_menu1" />
+
+    <TextView
+        android:id="@+id/priceMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="222dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#733F0E"
+        android:layout_marginTop="268dp"
+        android:text="@string/price_menu1" />
+
+    <TextView
+        android:id="@+id/descMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#733F0E"
+        android:layout_marginTop="300dp"
+        android:text="@string/desc_menu" />
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Order Now"
+        android:backgroundTint="#D52F2F"
+        android:onClick="navigateToNextPage"
+        app:cornerRadius="0dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginLeft="24dp"
+        app:strokeColor="#F9B916"
+        app:strokeWidth="1dp"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Back"
+        android:backgroundTint="#D52F2F"
+        android:onClick="navigateBack"
+        app:cornerRadius="0dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginLeft="24dp"
+        app:strokeColor="#F9B916"
+        app:strokeWidth="1dp"
+        />
+
+</RelativeLayout>

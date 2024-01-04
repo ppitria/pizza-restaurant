@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/orderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Detail"
+        android:textSize="20sp"
+        android:textColor="#703A0E"
+        android:textStyle="bold"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp" />
+
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asep"
+        android:textSize="18sp"
+        android:layout_below="@+id/orderLabel"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp" />
+
+
+    <TextView
+        android:id="@+id/storeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store: Cihampelas"
+        android:textSize="18sp"
+        android:layout_below="@+id/usernameText"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan"
+        android:textSize="18sp"
+        android:layout_below="@+id/storeText"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:id="@+id/deliveryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengiriman Detail"
+        android:textSize="20sp"
+        android:textColor="#703A0E"
+        android:textStyle="bold"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="45dp" />
+
+
+    <CheckBox
+        android:id="@+id/pickupCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambil Sendiri"
+        android:layout_below="@+id/deliveryLabel"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp" />
+
+    <CheckBox
+        android:id="@+id/deliveryCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fast Delivery (minimal 30 menit sampai)"
+        android:layout_below="@+id/pickupCheckbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:text="Done"
+        android:backgroundTint="#D52F2F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:strokeColor="#F9B916"
+        app:strokeWidth="1dp"
+        app:cornerRadius="0dp"
+        android:onClick="navigateToNextPage"
+        android:layout_below="@+id/deliveryCheckbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutTY"
+        android:layout_width="365dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/sendButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp">
+
+        <TextView
+            android:id="@+id/thankYouMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:text="Terima kasih Pa Asep sudah memesan di toko kami, pesanan Pepperoni Pizza anda dikirim menggunakan Fast Delivery"
+            android:textColor="#733F0E"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/sendButton" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logoPizza"
+        android:layout_width="223dp"
+        android:layout_height="264dp"
+        android:src="@drawable/logo_piza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/storeTeks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#703A0E"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/labelStore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoPizza"/>
+
+    <Spinner
+        android:id="@+id/listStore"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storeText"/>
+
+    <EditText
+        android:id="@+id/kota"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:hint="Kota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listStore"/>
+
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#703A0E"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:text="Your Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kota"/>
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:hint="Please fill your name"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNama"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:text="Submit"
+        android:backgroundTint="#D52F2F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:strokeColor="#F9B916"
+        app:strokeWidth="1dp"
+        android:onClick="navigateToNextPage"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNama"/>
+</LinearLayout>
